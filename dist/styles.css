@@ -97,3 +97,28 @@
 .contact-email-note{display:flex;gap:14px;align-items:center;margin-top:22px;background:#f1f8fd;border:1px solid #c9e0f2;border-radius:12px;padding:15px 18px;font-size:13px}
 @media(max-width:900px){.product-cutout-grid,.office-grid,.mobile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.product-cutout-grid,.office-grid,.mobile-grid{grid-template-columns:1fr}.product-cutout-stage,.memorial-image-stage{height:250px}.directory-topline{display:block;margin-top:42px}.directory-topline p{margin-top:12px}.contact-email-note{align-items:flex-start;flex-direction:column}}
+
+/* Header Contact Us link and full-size image viewer */
+.nav-links{gap:16px;font-size:12px}
+.image-open-button{display:grid;place-items:center;width:100%;height:100%;padding:12px;border:0;background:transparent;cursor:zoom-in}
+.image-open-button:focus-visible{outline:3px solid #e7b566;outline-offset:-5px;border-radius:12px}
+.image-open-button img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+.product-cutout-stage .image-open-button img{width:100%;height:100%}
+.memorial-image-stage .image-open-button{padding:0}
+.image-lightbox{position:relative;width:min(94vw,1200px);max-width:none;max-height:92vh;padding:30px;border:1px solid rgba(255,255,255,.45);border-radius:20px;background:#f5f9fc;color:#173b5d;box-shadow:0 24px 90px rgba(0,0,0,.4);overflow:visible}
+.image-lightbox::backdrop{background:rgba(5,20,38,.86);backdrop-filter:blur(6px)}
+.image-lightbox figure{display:grid;justify-items:center;gap:12px;margin:0}
+.image-lightbox figure img{display:block;max-width:100%;max-height:80vh;object-fit:contain}
+.image-lightbox figcaption{font-size:13px;color:#49647d;text-align:center}
+.image-lightbox-close{position:absolute;right:9px;top:9px;width:38px;height:38px;border:0;border-radius:50%;background:#173b5d;color:white;font-size:26px;line-height:1;cursor:pointer;z-index:2}
+.hero-inner{z-index:3}
+.hero:after{z-index:1}
+.hero-sun-rays{position:absolute;left:82.5%;top:71%;width:min(75vw,970px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:2;pointer-events:none;opacity:.82;background:repeating-conic-gradient(from 0deg,rgba(255,245,208,0) 0deg 7deg,rgba(255,243,197,.42) 8deg 9deg,rgba(255,223,151,.08) 10deg 16deg);-webkit-mask:radial-gradient(circle,transparent 0 5%,#000 12%,transparent 74%);mask:radial-gradient(circle,transparent 0 5%,#000 12%,transparent 74%);mix-blend-mode:screen;filter:blur(1px);animation:sun-rays-open 2.2s ease-out both}
+.hero-sun-glow{position:absolute;left:82.5%;top:71%;width:22px;height:22px;transform:translate(-50%,-50%);z-index:2;border-radius:50%;background:#fffdf0;pointer-events:none;mix-blend-mode:screen;box-shadow:0 0 14px 8px rgba(255,246,212,.95),0 0 55px 30px rgba(255,208,105,.85),0 0 145px 80px rgba(255,187,86,.42);animation:sun-core-open 1.7s ease-out both}
+.hero:before{filter:brightness(1.09) saturate(1.08)}
+@keyframes sun-rays-open{from{opacity:.12;transform:translate(-50%,-50%) scale(.74)}to{opacity:.82;transform:translate(-50%,-50%) scale(1)}}
+@keyframes sun-core-open{from{opacity:.4;box-shadow:0 0 4px 2px rgba(255,246,212,.4),0 0 20px 10px rgba(255,208,105,.3),0 0 55px 25px rgba(255,187,86,.12)}to{opacity:1}}
+@media(max-width:900px){.nav-links{gap:10px;font-size:11px}}
+@media(max-width:700px){.nav-links{gap:0;font-size:14px}.hero-sun-rays{left:98%;top:62%;width:120vw;opacity:.78}.hero-sun-glow{left:98%;top:62%;width:18px;height:18px;box-shadow:0 0 12px 7px rgba(255,246,212,.95),0 0 42px 24px rgba(255,208,105,.82),0 0 95px 50px rgba(255,187,86,.4)}.image-lightbox{padding:22px 12px 16px}.image-lightbox figure img{max-height:78vh}}
+@media(max-width:900px){.site-header{height:84px}.header-logo{width:200px;height:65px}.menu-toggle{display:grid;place-items:center}.nav-cta{display:none}.nav-links{display:none;position:absolute;left:0;right:0;top:84px;background:#2568b6;padding:12px 24px 22px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid rgba(255,255,255,.16)}.nav-links.open{display:flex}.nav-links a{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:14px}}
+@media(max-width:700px){.site-header{height:72px}.nav-wrap{padding:0 19px}.header-logo{width:190px;height:61px}.nav-links{top:72px;background:#2568b6}}
