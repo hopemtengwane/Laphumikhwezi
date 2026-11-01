@@ -18,3 +18,7 @@
 
 /* Photographic, logo-inspired dawn hero. */
 .hero{isolation:isolate;min-height:650px;background:#123e70}.hero:before{z-index:0;inset:0;background-image:url("assets/hero-dawn.jpg");background-size:cover;background-position:center 52%;animation:hero-dawn-open 2.4s ease-out both}.hero:after{z-index:1;inset:0;height:auto;background:linear-gradient(90deg,rgba(9,34,69,.76) 0%,rgba(15,56,101,.56) 44%,rgba(16,61,108,.14) 100%),linear-gradient(0deg,rgba(9,38,72,.38),transparent 34%);pointer-events:none}.hero-inner{z-index:2;grid-template-columns:minmax(0,1fr);gap:0;min-height:650px;padding-top:92px;padding-bottom:108px}.hero-visual,.brand-rainbow,.brand-clouds,#starfield{display:none}.hero-copy{color:rgba(255,255,255,.88)}@keyframes hero-dawn-open{0%{opacity:.38;filter:brightness(.66);transform:scale(1.025)}100%{opacity:1;filter:brightness(1);transform:scale(1)}}@media(max-width:700px){.hero{min-height:680px}.hero:before{background-position:70% center}.hero:after{background:linear-gradient(90deg,rgba(9,34,69,.74),rgba(15,56,101,.38)),linear-gradient(0deg,rgba(9,38,72,.42),transparent 48%)}.hero-inner{min-height:680px;padding:68px 22px 78px}}
+
+
+/* Blend the logo into the header using its sampled sky blue. */
+.site-header{background:#2568b6;backdrop-filter:none;border-bottom-color:rgba(255,255,255,.08)}.header-logo{background:transparent;border-radius:0;padding:0;object-fit:cover}.nav-links{color:rgba(255,255,255,.88)}@media(max-width:700px){.nav-links{background:#2568b6}}
