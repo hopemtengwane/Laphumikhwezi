@@ -134,9 +134,9 @@
 
 /* Match the original gold eyebrow style and sit close to the header rainbow */
 .hero-locations{top:2px;width:min(1144px,calc(100% - 56px));min-height:unset;padding:0;display:flex;align-items:flex-start;gap:11px;border:0}
-.hero-locations:before{content:"";width:28px;height:1px;margin-top:7px;flex:none;background:var(--gold)}
+
 .hero-locations>strong{display:none}
 .hero-location-list{display:flex;flex-wrap:wrap;align-items:center;gap:2px 0;color:var(--gold-light)}
 .hero-location-list span{font-size:10px;font-weight:700;line-height:1.55;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;color:var(--gold-light)}
 .hero-location-list span+span:before{content:"·";display:inline-block;margin:0 8px;color:var(--gold-light)}
-@media(max-width:700px){.hero-locations{top:2px;width:calc(100% - 40px);padding:0}.hero-locations:before{width:21px;margin-top:6px}.hero-locations{gap:8px}.hero-location-list span{font-size:9px;letter-spacing:.16em;line-height:1.55}.hero-location-list span+span:before{margin:0 5px}}
+@media(max-width:700px){.hero-locations{top:2px;width:calc(100% - 40px);padding:0}.hero-locations{gap:8px}.hero-location-list span{font-size:9px;letter-spacing:.16em;line-height:1.55}.hero-location-list span+span:before{margin:0 5px}}
